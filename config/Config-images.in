@@ -279,7 +279,7 @@ menu "Target Images"
 		bool "Build VMware image files (VMDK)"
 		depends on TARGET_x86 || TARGET_armvirt || TARGET_loongarch64
 		depends on GRUB_IMAGES || GRUB_EFI_IMAGES
-		default y
+		default n
 		select PACKAGE_kmod-e1000
 
 	config VHDX_IMAGES
@@ -291,7 +291,7 @@ menu "Target Images"
 	config TARGET_IMAGES_GZIP
 		bool "GZip images"
 		depends on TARGET_ROOTFS_EXT4FS || TARGET_x86 || TARGET_armvirt || TARGET_loongarch64 || TARGET_malta
-		default y
+		default n
 
 	comment "Image Options"
 
