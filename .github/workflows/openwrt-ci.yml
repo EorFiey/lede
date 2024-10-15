@@ -23,7 +23,7 @@ jobs:
 
     name: Build OpenWrt Firmware
 
-    runs-on: Ubuntu-lastest
+    runs-on: ubuntu-lastest
 
     steps:
       - name: Space cleanup and Initialization environment
